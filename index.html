@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="VEATIC: Video-based Emotion and Affect Tracking in Context Dataset">
+  <meta name="keywords" content="VEATIC, Emotion and Affect Tracking, in Context, Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VEATIC: Video-based Emotion and Affect Tracking in Context Dataset</title>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZTJ9KRHY8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6ZTJ9KRHY8');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+            TBD
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">VEATIC: Video-based Emotion and Affect Tracking in Context Dataset</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://albuspeter.github.io/">Zhihang Ren</a><sup>1</sup><sup>*</sup>
+            </span>
+            <span class="author-block">
+              Jefferson Ortega<sup>1</sup><sup>*</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://zc0in.github.io/">Yifan Wang</a><sup>1</sup><sup>*</sup>
+            </span>
+            <span class="author-block">
+              Zhimin Chen<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://whitneylab.berkeley.edu/people/dave.html">David Whitney</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~seitz/">Yunhui Guo</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://web.eecs.umich.edu/~stellayu/">Stella Yu</a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Berkeley</span>
+            <span class="author-block"><sup>2</sup>University of Texas at Dallas</span>
+            <span class="author-block"><sup>3</sup>University of Michigan, Ann Arbor</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">(<sup>*</sup>Equal Contribution)</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/AlbusPeter/VEATIC"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/Teaser.png", width="300 px", align="center">
+      <h2 class="subtitle has-text-centered">
+        Importance of context in emotion recognition.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sample_clip0.gif"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sample_clip0.gif"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sample_clip0.gif"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Human affect recognition has been a significant topic
+            in psychophysics and computer vision. However, the currently
+            published datasets have many limitations. For example,
+            most datasets contain frames that contain only information
+            about facial expressions. Due to the limitations of
+            previous datasets, it is very hard to either understand the
+            mechanisms for affect recognition of humans or generalize
+            well on common cases for computer vision models trained
+            on those datasets. In this work, we introduce a brand new
+            large dataset, the Video-based Emotion and Affect Tracking
+            in Context Dataset (VEATIC), that can conquer the limitations
+            of the previous datasets. VEATIC has 124 video clips
+            from Hollywood movies, documentaries, and home videos
+            with continuous valence and arousal ratings of each frame
+            via real-time annotation. Along with the dataset, we propose
+            a new computer vision task to infer the affect of the
+            selected character via both context and character information
+            in each video frame. Additionally, we propose a simple
+            model to benchmark this new computer vision task. We also
+            compare the performance of the pretrained model using our
+            dataset with other similar datasets. Experiments show the
+            competing results of our pretrained model via VEATIC, indicating
+            the generalizability of VEATIC.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Preview</h2>
+        <div class="publication-video">
+          <img src="./static/images/preview.png", width="300 px", align="center">
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<!-- Annotation. -->
+<div class="columns is-centered">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Annotation</h2>
+
+    <!-- Process. -->
+    <h3 class="title is-4">Process</h3>
+    <div class="content has-text-justified">
+      <p>
+        User interface used for video annotation. a) Participants were first shown the target character and were reminded of the task
+        instructions before the start of each video. b) The overlayed valence and arousal grid that was present while observers annotated the
+        videos. Observers were instructed to continuously rate the emotion of the target character in the video in real-time.
+      </p>
+    </div>
+    <div class="content has-text-centered">
+      <img src="./static/images/annotation.png", width="300 px", align="center">
+    </div>
+    <!--/ Process. -->
+
+  </div>
+</div>
+<!--/ Annotation. -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Sample Ratings. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Sample Ratings</h2>
+          <p>
+            Example valence and arousal ratings for a single video (video 47).
+          </p>
+          <img src="./static/images/sample_ratings.png", width="300 px", align="center">
+        </div>
+      </div>
+      <!--/ Sample Ratings. -->
+
+      <!-- Annotation Distribution. -->
+      <div class="column">
+        <h2 class="title is-3">Distributions</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Distribution of valence and arousal ratings across participants.
+            Individual white dots represent the average valence and
+            arousal of the continuous ratings for each video clip for Hollywood
+            movies. Blue squares and green triangles represent the average
+            valence and arousal for documentaries and home videos, respectively.
+            </p>
+            <img src="./static/images/VA_dist.png", width="300 px", align="center">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Annotation Distribution. -->
+
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+      <a class="icon-link" href="https://albuspeter.github.io/" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website refers to <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
