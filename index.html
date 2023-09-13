@@ -29,6 +29,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -188,52 +189,52 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/4_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/28_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/31_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/63_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-blueshirt">
           <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/73_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-mask">
           <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/78_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-coffee">
           <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_clip0.mp4"
+            <source src="./static/videos/79_trace_ol.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-toby">
+        <!-- <div class="item item-toby">
           <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/sample_clip0.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -355,6 +356,94 @@
       </div>
     </div>
     <!--/ Annotation Distribution. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Downloads. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Download</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>The CAER dataset is available to download for research purposes.</strong>
+          </p>
+          <p>
+            <strong>The copyright remains with the original owners of the video.</strong>
+          </p>
+        </div>
+
+        <!-- VEATIC Data. -->
+        <h3 class="title is-4">VEATIC Data</h3>
+        <div class="content has-text-justified">
+          <p>
+            This benchmark contains 124 annotated videos.
+          </p>
+          <p>
+            For each video, the first 70% of the video is for training and the rest 30% of the video is for testing.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <button class="btn" onclick="location.href='https://drive.google.com/file/d/1HZIw8RGsRwwENhJlhNJRL88YyfiE442N/view?usp=sharing'"><i class="fa fa-download"></i>VEATIC</button>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            VEATIC also contains videos with interacting characters and ratings for separate characters in the same video. These videos are those with video IDs 98-123.
+          </p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/novelrating.png", width="500 px", align="center">
+        </div>
+
+
+        <!--/ VEATIC Data. -->
+
+        <!-- Psychophysics. -->
+        <h3 class="title is-4">Psychophysics Data</h3>
+        <div class="content has-text-justified">
+          <p>
+            We also provide individual ratings of each video for psychophysical studies. These ratings can be found below.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <button class="btn"><i class="fa fa-download"></i>VEATIC_Psych</button>
+        </div>
+        <!--/ Psychophysics. -->
+
+      </div>
+    </div>
+    <!--/ Downloads. -->
+
+
+    <!-- Concurrent Work. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Concurrent Work. -->
 
   </div>
 </section>
